@@ -21,6 +21,7 @@ const WinLayout = () => {
   const [dhcpOpen, setDhcpOpen] = useState(false);
   const [secondWin, setSecondWin] = useState(false);
   const [logLines, setLogLines] = useState([]);
+  const [displayContainer, setDisplayContainer] = useState('udsDataDisplay');
   const outputRef = useRef(null);
 
   return (
@@ -67,20 +68,25 @@ const WinLayout = () => {
         <div className="display-section">
           {!consoleFull && (
             <div className="display-container">
-              <div className="display-container-top">
-                <div className="display-container-top-left">
+              {displayContainer === 'udsDataDisplay' && (
+                <>
+                  <div className="display-container-top">
+                    <div className={`display-container-top-left ${!consoleOpen ? 'open' : ''}`}>
+                      <UdsDataDisplay consoleOpen={consoleOpen}/>
+                    </div>
+                    <div className="display-container-top-right">
+                      
+                    </div>
+                  </div>
+                  <div className="display-container-middle">
 
-                </div>
-                <div className="display-container-top-right">
-                  
-                </div>
-              </div>
-              <div className="display-container-middle">
+                  </div>
+                  <div className="display-container-bottom">
 
-              </div>
-              <div className="display-container-bottom">
+                  </div>
+                </> 
+              )}
 
-              </div>
             </div>
           )}
           {consoleOpen && (

@@ -1,43 +1,207 @@
-.uds-container {
-  padding: 20px;
-  font-family: Arial, sans-serif;
+@media (max-width: 1800px) {
+  .uds-container {
+    font-family: system-ui;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 15px;
+    background-color: var(--bg-primary-hover);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    height: 100%;
+    box-sizing: border-box;
+    gap: 6px;
+  }
+
+  .uds-container.open {
+    gap: 24px;
+  }
+
+  .uds-title {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    display: flex;
+  }
+
+  .uds-title.open {
+    font-size: 0.9rem;
+  }
+
+  .uds-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .uds-table {
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  .uds-table thead {
+    background-color: var(--bg-secondary);
+  }
+
+  /* Center only the header cells */
+  .uds-table thead th {
+    text-align: center;
+    vertical-align: middle;
+    color: var(--text-primary);
+    font-weight: 400;
+    font-size: 0.75rem;
+  }
+
+  .uds-table.open thead th {
+    font-size: 0.85rem;
+  }
+
+  .uds-table th,
+  .uds-table td {
+    padding: 6.5px 10px;
+    text-align: left;
+    font-size: 0.7rem;
+  }
+
+  .uds-table.open td {
+    padding: 7px 12px;
+    font-size: 0.8rem;
+  }
+
+  .uds-table th:first-child,
+  .uds-table td:first-child {
+    width: 40%;
+    white-space: nowrap; /* prevents wrapping of the label */
+  }
+
+  .uds-table th:last-child,
+  .uds-table td:last-child {
+    width: 60%;
+    /* allow very long values to break if needed: */
+    word-break: break-all;
+  }
+
+  .uds-table td:last-child {
+    color: var(--text-secondary);
+    text-align: center;
+  }
+
+  .uds-table td:first-child {
+    color: var(--text-secondary);
+  }
+
+  .uds-table.connected td:last-child {
+    color: var(--text-primary);
+    text-align: left;
+  }
+
+  .uds-row-alt {
+    background-color: var(--bg-primary-hover);
+  }
+
+  .uds-table.connected .uds-row-alt {
+    background-color: var(--app-main-bg);
+  }
 }
 
-.uds-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 16px;
-}
+@media (min-width: 1800px) {
+  .uds-container {
+    font-family: system-ui;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 15px;
+    background-color: var(--bg-primary-hover);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    height: 100%;
+    box-sizing: border-box;
+    gap: 36px;
+  }
 
-.uds-no-data {
-  padding: 20px;
-  text-align: center;
-  color: #888;
-  font-size: 16px;
-}
+  .uds-container.open {
+    gap: 72px;
+  }
 
-.uds-table-wrapper {
-  overflow-x: auto;
-}
+  .uds-title {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    display: flex;
+  }
 
-.uds-table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: #fff;
-  border: 1px solid #ccc;
-}
+  .uds-title.open {
+    font-size: 1.15rem;
+  }
 
-.uds-table thead {
-  background-color: #f0f0f0;
-}
+  .uds-table-wrapper {
+    overflow-x: auto;
+  }
 
-.uds-table th,
-.uds-table td {
-  padding: 12px 16px;
-  border-bottom: 1px solid #ddd;
-  text-align: left;
-}
+  .uds-table {
+    table-layout: fixed;
+    width: 100%;
+  }
 
-.uds-row-alt {
-  background-color: #fafafa;
+  .uds-table thead {
+    background-color: var(--bg-secondary);
+  }
+
+  /* Center only the header cells */
+  .uds-table thead th {
+    text-align: center;
+    vertical-align: middle;
+    color: var(--text-primary);
+    font-weight: 400;
+    font-size: 0.95rem;
+  }
+
+  .uds-table.open thead th {
+    font-size: 1.05rem;
+  }
+
+  .uds-table th,
+  .uds-table td {
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 0.9rem;
+  }
+
+  .uds-table.open td {
+    padding: 11px 16px;
+    font-size: 1rem;
+  }
+
+  .uds-table th:first-child,
+  .uds-table td:first-child {
+    width: 40%;
+    white-space: nowrap; /* prevents wrapping of the label */
+  }
+
+  .uds-table th:last-child,
+  .uds-table td:last-child {
+    width: 60%;
+    /* allow very long values to break if needed: */
+    word-break: break-all;
+  }
+
+  .uds-table td:last-child {
+    color: var(--text-secondary);
+    text-align: center;
+  }
+
+  .uds-table td:first-child {
+    color: var(--text-secondary);
+  }
+
+  .uds-table.connected td:last-child {
+    color: var(--text-primary);
+    text-align: left;
+  }
+
+  .uds-row-alt {
+    background-color: var(--bg-primary-hover);
+  }
+
+  .uds-table.connected .uds-row-alt {
+    background-color: var(--app-main-bg);
+  }
 }

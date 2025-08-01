@@ -17,6 +17,7 @@
   --valid-color: rgba(36, 236, 76, 0.8);
   --valid-color-hover: rgba(36, 236, 76, 0.1);
   --app-main-color:Yellow;
+  --app-main-bg:rgba(255, 255, 0, 0.05);
 }
 
 [data-theme="light"] {

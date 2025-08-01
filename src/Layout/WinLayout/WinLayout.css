@@ -43,7 +43,7 @@
     .menubar-section {
         background-color: var(--bg-primary);
         height: 96.2vh;
-        width: 14vw;
+        width: 13vw;
         border-right: 1px solid var(--border-color);
     }
 
@@ -73,6 +73,14 @@
 
     .display-container-top-left {
         width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .display-container-top-left.open {
+        padding: 15px;
     }
 
     .display-container-top-right {
@@ -84,7 +92,7 @@
     }
 
     .display-container-bottom {
-        height: 15%;
+        height: 10%;
     }
 
     .console-section {
@@ -93,6 +101,7 @@
         width: 100%;
         margin-top: auto;
         border-top: 1px solid var(--border-color);
+        overflow: hidden;
     }
 
     .console-section.full {
@@ -166,7 +175,7 @@
     .menubar-section {
         background-color: var(--bg-primary);
         height: 97.4vh;
-        width: 9.5vw;
+        width: 8.5vw;
         border-right: 1px solid var(--border-color);
     }
     
@@ -196,6 +205,14 @@
 
     .display-container-top-left {
         width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .display-container-top-left.open {
+        padding: 15px;
     }
 
     .display-container-top-right {
@@ -207,7 +224,7 @@
     }
 
     .display-container-bottom {
-        height: 15%;
+        height: 10%;
     }
 
     .console-section {
@@ -216,6 +233,7 @@
         width: 100%;
         margin-top: auto;
         border-top: 1px solid var(--border-color);
+        overflow: hidden;
     }
 
     .console-section.full {
