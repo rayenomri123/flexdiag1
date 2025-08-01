@@ -1,0 +1,30 @@
+{
+  "name": "dhcp_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dhcp_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dhcp": "^0.2.20",
+    "winston": "^3.17.0",
+    "yargs": "17.x"
+  },
+  "bin": "dhcp_server.js",
+  "pkg": {
+    "targets": [
+      "node18-linux-x64",
+      "node18-win-x64",
+      "node18-macos-x64"
+    ],
+    "outputPath": "dist",
+    "options": [
+      "no-warnings"
+    ]
+  }
+}

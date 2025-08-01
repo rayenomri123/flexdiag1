@@ -1,0 +1,376 @@
+@media (max-width: 1800px) {
+    .titlebar-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .connectivity-indicator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10px 0 15px;
+        color: var(--valid-color);
+        opacity: 0;
+        font-size: 12px;
+    }
+
+    .connectivity-indicator.connected {
+        opacity: 1;
+    }
+
+    .connectivity-indicator-icon {
+        background-color: var(--valid-color-hover);
+        padding: 4px;
+        border-radius: 4px;
+    }
+
+    .wincontrols-section {
+        height: 100%;
+        width: 5vw;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .optioncontrols-section {
+        width: 6.5vw;
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+    }
+
+    .brand-section {
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 5vw;
+    }
+
+    .app-logo{
+        height: 18px;
+    }
+
+    .app-name{
+        color: var(--text-secondary);
+        font-family: 'Caveat';
+        font-size: 1.1rem;
+    }
+
+    .wincontrols-btn {
+        flex: 1;
+        background-color: transparent;
+        border: none;
+        color: var(--icon-color);
+        cursor: pointer;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .optioncontrols-btn {
+    
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        color: var(--icon-color);
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+    }
+
+    .optioncontrols-btn.on {
+        color: var(--valid-color);
+    }
+
+    .optioncontrols-btn.off {
+        color: var(--invalid-color);
+    }
+
+    .optioncontrols-icon {
+        padding: 3px;
+        border-radius: 4px;
+        font-size: 15.5px;
+    }
+
+    .optioncontrols-icon1 {
+        padding: 3px;
+        border-radius: 4px;
+        font-size: 15.5px;
+    }
+
+    .optioncontrols-btn.on .optioncontrols-icon1 {
+        background-color: var(--valid-color-hover);
+    }
+
+    .optioncontrols-btn.off .optioncontrols-icon1 {
+        background-color: var(--invalid-color-hover);
+    }
+
+    .optioncontrols-btn:hover .optioncontrols-icon{
+        background-color: var(--bg-tertiary);
+    }
+
+    .wincontrols-btn:hover {
+        color: var(--icon-color-hover);
+        background-color: var(--bg-tertiary);
+    }
+
+    .wincontrols-btn.close:hover {
+    background-color: var(--invalid-color);
+    }
+
+    .wincontrols-btn:active {
+        color: black;
+        background-color: white;
+    }
+
+    .wincontrols-btn.close:active {
+        color: black;
+        background-color: white;
+    }
+
+    .layoutcontrols-section {
+        width: 6.5vw;
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        justify-content: flex-end;
+    }
+
+    .appmenu-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+        margin-left: 5px;
+    }
+
+    .appmenu-list {
+        position: fixed;
+        background-color: var(--bg-primary-hover);
+        border: 1px solid var(--border-color-hover);
+        left: 80%;
+        top: 3.7%;
+        list-style: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    .appmenu-list li{
+        color: var(--text-secondary);
+        font-family: system-ui;
+        font-size: 0.9rem;
+        text-decoration: none;
+        padding: 6px 65px 6px 20px;
+        cursor: pointer;
+    }
+
+    .appmenu-list li:hover {
+        color: var(--text-primary);
+        background-color: var(--bg-tertiary);
+    }
+
+    .optioncontrols-icon.open {
+        background-color: var(--bg-tertiary);
+    }
+}
+
+@media (min-width: 1800px) {
+    .titlebar-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .connectivity-indicator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 5px 0 17px;
+        color: var(--valid-color);
+        opacity: 0;
+        font-size: 13px;
+    }
+
+    .connectivity-indicator.connected {
+        opacity: 1;
+    }
+
+    .connectivity-indicator-icon {
+        background-color: var(--valid-color-hover);
+        padding: 5px;
+        border-radius: 4px;
+    }
+
+    .wincontrols-section {
+        height: 100%;
+        width: 90px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .optioncontrols-section {
+        width: 120px;
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+    }
+
+    .brand-section {
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 3.5vw;
+    }
+
+    .app-logo{
+        height: 18px;
+    }
+
+    .app-name{
+        color: var(--text-secondary);
+        font-family: 'Caveat';
+        font-size: 1.1rem;
+    }
+
+    .wincontrols-btn {
+        flex: 1;
+        background-color: transparent;
+        border: none;
+        color: var(--icon-color);
+        cursor: pointer;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .optioncontrols-btn {
+    
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        color: var(--icon-color);
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+    }
+
+    .optioncontrols-btn.on {
+        color: var(--valid-color);
+    }
+
+    .optioncontrols-btn.off {
+        color: var(--invalid-color);
+    }
+
+    .optioncontrols-icon {
+        padding: 3.5px;
+        border-radius: 3px;
+        font-size: 16.5px;
+    }
+
+    .optioncontrols-icon1 {
+        padding: 3.5px;
+        border-radius: 4px;
+        font-size: 16.5px;
+    }
+
+    .optioncontrols-btn.on .optioncontrols-icon1 {
+        background-color: var(--valid-color-hover);
+    }
+
+    .optioncontrols-btn.off .optioncontrols-icon1 {
+        background-color: var(--invalid-color-hover);
+    }
+
+    .optioncontrols-btn:hover .optioncontrols-icon{
+        background-color: var(--bg-4);
+    }
+
+    .wincontrols-btn:hover {
+        color: var(--icon-color-hover);
+        background-color: var(--bg-tertiary);
+    }
+
+    .wincontrols-btn.close:hover {
+    background-color: var(--invalid-color);
+    }
+
+    .wincontrols-btn:active {
+        color: black;
+        background-color: white;
+    }
+
+    .wincontrols-btn.close:active {
+        color: black;
+        background-color: white;
+    }
+
+    .layoutcontrols-section {
+        width: 6.5vw;
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        justify-content: center;
+        justify-content: flex-end;
+    }
+
+    .appmenu-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+        margin-left: 5px;
+    }
+
+    .appmenu-list {
+        position: fixed;
+        background-color: var(--bg-primary-hover);
+        border: 1px solid var(--border-color-hover);
+        left: 87%;
+        top: 2.6%;
+        list-style: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    .appmenu-list li{
+        color: var(--text-secondary);
+        font-family: system-ui;
+        font-size: 1rem;
+        text-decoration: none;
+        padding: 8px 65px 8px 20px;
+        cursor: pointer;
+    }
+
+    .appmenu-list li:hover {
+        color: var(--text-primary);
+        background-color: var(--bg-tertiary);
+    }
+
+    .optioncontrols-icon.open {
+        background-color: var(--bg-tertiary);
+    }
+}

@@ -1,0 +1,35 @@
+:root {
+  --bg-console: rgb(25, 25, 25);
+  --bg-primary: rgb(30, 30, 30);
+  --bg-primary-hover: rgb(35, 35, 35);
+  --bg-secondary: rgb(40, 40, 40);
+  --bg-tertiary: rgb(50, 50, 50);
+  --bg-4: rgb(55, 55, 55);
+  --text-primary: rgb(255, 255, 255);
+  --text-secondary: rgb(200, 200, 200);
+  --text-tertiary: rgb(100, 100, 100);
+  --border-color: rgb(55, 55, 55);
+  --border-color-hover: rgb(75, 75, 75);
+  --icon-color: rgba(200, 200, 200);
+  --icon-color-hover: rgba(255, 255, 255);
+  --invalid-color: rgb(200, 0, 0);
+  --invalid-color-hover: rgba(200, 0, 0, 0.1);
+  --valid-color: rgba(36, 236, 76, 0.8);
+  --valid-color-hover: rgba(36, 236, 76, 0.1);
+  --app-main-color:Yellow;
+}
+
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: rgb(240, 240, 240);
+  --bg-tertiary: rgba(230, 230, 230);
+  --border-color: rgba(220, 220, 220);
+}
+
+html, body {
+  margin: 0;
+  background-color: var(--bg-primary);
+  *:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,43 @@
+.uds-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.uds-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.uds-no-data {
+  padding: 20px;
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+}
+
+.uds-table-wrapper {
+  overflow-x: auto;
+}
+
+.uds-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.uds-table thead {
+  background-color: #f0f0f0;
+}
+
+.uds-table th,
+.uds-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.uds-row-alt {
+  background-color: #fafafa;
+}

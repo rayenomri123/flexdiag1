@@ -1,0 +1,259 @@
+@media (max-width: 1800px) {
+    .console-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .console-container-controls {
+        height: 35px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 10px;
+        box-sizing: border-box;
+        color: var(--icon-color);
+        gap: 2px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .console-container-controls-icon {
+        background-color: transparent;
+        padding: 2px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .console-container-controls-icon:hover {
+        background-color: var(--bg-4);
+        color: var(--icon-color-hover);
+        padding: 2px;
+        border-radius: 4px;
+    }
+
+    .console-container-controls-icon.act {
+        background-color: var(--bg-4);
+    }
+
+    .console-container-output {
+        height: 100%;
+        width: 100%;
+        font-family: system-ui; /* Changed to system-ui for better log readability */
+        padding: 0.5rem 1rem;
+        overflow-y: auto;
+        box-sizing: border-box;
+        white-space: pre-wrap; /* Preserve whitespace for JSON and logs */
+        cursor: text;
+        background-color: var(--bg-console);
+    }
+
+    /* Width/height of the scrollbar */
+    .console-container-output::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    /* The “track” behind the thumb */
+    .console-container-output::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 4px;
+    }
+
+    /* The draggable thumb */
+    .console-container-output::-webkit-scrollbar-thumb {
+        background-color: var(--bg-tertiary);
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Thumb hover state */
+    .console-container-output::-webkit-scrollbar-thumb:hover {
+        background-color: var(--bg-4);
+    }
+
+    .log-line {
+        font-size: 0.87rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px; /* Space between timestamp, type, and message */
+        margin-bottom: 4px;
+    }
+
+    .log-timestamp {
+        color: white; /* Matches your existing timestamp color */
+    }
+
+    .log-type {
+        color: var(--app-main-color); /* Yellow for message type (e.g., [INFO], [ECU]) */
+    }
+
+    .log-message {
+        color: rgb(0, 220, 255); /* Matches your existing message color (cyan) */
+    }
+
+    .log-json {
+        margin: 0;
+        padding-left: 20px;
+        color: #2ecc71; /* Green for JSON content */
+    }
+
+    .console-container-init {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-tertiary);
+        gap: 8px;
+    }
+
+    .console-container-init-icon {
+        font-size: 40px;
+    }
+
+    .console-container-init-title {
+        font-size: 0.6rem;
+        font-family: system-ui;
+    }
+
+    .console-container-controls-title {
+        margin-right: auto;
+        font-family: system-ui;
+        font-size: 0.8rem;
+        color: var(--app-main-color);
+    }
+}
+
+@media (min-width: 1800px) {
+    .console-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .console-container-controls {
+        height: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 12px;
+        box-sizing: border-box;
+        color: var(--icon-color);
+        gap: 2px;
+        font-size: 17px;
+        cursor: pointer;
+    }
+
+    .console-container-controls-icon {
+        background-color: transparent;
+        padding: 3px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .console-container-controls-icon:hover {
+        background-color: var(--bg-4);
+        color: var(--icon-color-hover);
+        padding: 3px;
+        border-radius: 4px;
+    }
+
+    .console-container-controls-icon.act {
+        background-color: var(--bg-4);
+    }
+
+    .console-container-output {
+        height: 100%;
+        width: 100%;
+        font-family: system-ui; /* Changed to system-ui for better log readability */
+        padding: 0.5rem;
+        overflow-y: auto;
+        box-sizing: border-box;
+        white-space: pre-wrap; /* Preserve whitespace for JSON and logs */
+        cursor: text;
+        background-color: var(--bg-console);
+    }
+
+    /* Width/height of the scrollbar */
+    .console-container-output::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    /* The “track” behind the thumb */
+    .console-container-output::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 4px;
+    }
+
+    /* The draggable thumb */
+    .console-container-output::-webkit-scrollbar-thumb {
+        background-color: var(--bg-tertiary);
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Thumb hover state */
+    .console-container-output::-webkit-scrollbar-thumb:hover {
+        background-color: var(--bg-4);
+    }
+
+    .log-line {
+        font-size: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px; /* Space between timestamp, type, and message */
+        margin-bottom: 4px;
+    }
+
+    .log-timestamp {
+        color: white; /* Matches your existing timestamp color */
+    }
+
+    .log-type {
+        color: var(--app-main-color); /* Yellow for message type (e.g., [INFO], [ECU]) */
+    }
+
+    .log-message {
+        color: rgb(0, 220, 255); /* Matches your existing message color (cyan) */
+    }
+
+    .log-json {
+        margin: 0;
+        padding-left: 20px;
+        color: #2ecc71; /* Green for JSON content */
+    }
+
+    .console-container-init {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-tertiary);
+        gap: 12px;
+    }
+
+    .console-container-init-icon {
+        font-size: 60px;
+    }
+
+    .console-container-init-title {
+        font-size: 0.75rem;
+        font-family: system-ui;
+    }
+
+    .console-container-controls-title {
+        margin-right: auto;
+        font-family: system-ui;
+        font-size: 0.85rem;
+        color: var(--app-main-color);
+    }
+}

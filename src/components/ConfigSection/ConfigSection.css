@@ -1,0 +1,55 @@
+@media (max-width: 1800px) {
+    .init-configsection-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tools-indicator-container{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        color:var(--text-tertiary);
+    }
+
+    .tools-indicator-icon {
+        font-size: 40px;
+    }
+
+    .tools-indicator-title {
+        font-family: system-ui;
+        font-size: 0.6rem;
+    }
+}
+
+@media (min-width: 1800px) {
+    .init-configsection-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tools-indicator-container{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-tertiary);
+    }
+
+    .tools-indicator-icon {
+        font-size: 60px;
+    }
+
+    .tools-indicator-title {
+        font-family: system-ui;
+        font-size: 0.75rem;
+    }
+}

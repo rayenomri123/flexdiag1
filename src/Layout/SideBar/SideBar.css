@@ -1,0 +1,67 @@
+@media (max-width: 1800px) {
+    .sidebar-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar-btn {
+        background-color: transparent;
+        border: none;
+        border-left: 1px solid transparent;
+        color: var(--icon-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        width: 100%;
+        padding: 12px 0;
+        cursor: pointer;
+    }
+
+    .sidebar-btn:hover {
+        color: var(--icon-color-hover);
+    }
+
+    .sidebar-btn.clicked {
+        border-left: 1px solid var(--app-main-color);
+        color: var(--icon-color-hover);
+    }
+
+}
+
+@media (min-width: 1800px) {
+    .sidebar-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar-btn {
+        background-color: transparent;
+        border: none;
+        border-left: 2px solid transparent;
+        color: var(--icon-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        width: 100%;
+        padding: 12px 0;
+        cursor: pointer;
+    }
+
+    .sidebar-btn:hover {
+        color: var(--icon-color-hover);
+    }
+
+    .sidebar-btn.clicked {
+        border-left: 2px solid var(--app-main-color);
+        color: var(--icon-color-hover);
+    }
+
+}

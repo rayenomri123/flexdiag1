@@ -1,0 +1,99 @@
+@media (max-width: 1800px) {
+    .Menubar-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MenubarDHCP-btn {
+        background-color: transparent;
+        border: none;
+        color: var(--text-secondary);
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        padding: 10px 15px;
+        font-family: system-ui;
+        font-size: 0.9rem;
+        align-items: center;
+        gap: 5px;
+    }
+
+
+    .chvr {
+        display: inline-block;
+        margin-top: 1px;
+        color: var(--text-secondary);
+        font-size: 14px;
+        transform: rotate(0deg);
+        /* transition: transform 0.2s ease; */
+    }
+
+    .MenubarDHCP-btn.open {
+        color: var(--text-primary);
+        background-color: var(--bg-secondary);
+    }
+    .MenubarDHCP-btn.open .chvr {
+        color: var(--text-primary);
+        transform: rotate(90deg);
+    }
+
+    .MenubarDHCP-btn:hover {
+        color: var(--text-primary);
+        background-color: var(--bg-secondary);
+    }
+    .MenubarDHCP-btn:hover .chvr {
+        color: var(--text-primary);
+    }
+}
+
+@media (min-width: 1800px) {
+    .Menubar-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MenubarDHCP-btn {
+        background-color: transparent;
+        border: none;
+        color: var(--text-secondary);
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        padding: 12px 15px;
+        font-family: system-ui;
+        font-size: 0.97rem;
+        align-items: center;
+        gap: 8px;
+    }
+
+
+    .chvr {
+        display: inline-block;
+        margin-top: 1px;
+        color: var(--text-secondary);
+        font-size: 15px;
+        transform: rotate(0deg);
+        /* transition: transform 0.2s ease; */
+    }
+
+    .MenubarDHCP-btn.open {
+        color: var(--text-primary);
+        background-color: var(--bg-secondary);
+    }
+    .MenubarDHCP-btn.open .chvr {
+        color: var(--text-primary);
+        transform: rotate(90deg);
+    }
+
+    .MenubarDHCP-btn:hover {
+        color: var(--text-primary);
+        background-color: var(--bg-secondary);
+    }
+    .MenubarDHCP-btn:hover .chvr {
+        color: var(--text-primary);
+    }
+}

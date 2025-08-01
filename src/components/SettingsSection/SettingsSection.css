@@ -1,0 +1,136 @@
+
+@media (max-width: 1800px) {
+    .settings-section-container {
+        height: 75%;
+        width: 70%;
+        background-color: var(--bg-primary-hover);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .settings-section-close-btn {
+        position: fixed;
+        color: var(--icon-color);
+        top: 16.5%;
+        left: 86%;
+        background-color: var(--bg-secondary);
+        padding: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 12px;
+        border: 1px solid var(--border-color);
+    }
+
+    .settings-section-close-btn:hover {
+        color: var(--icon-color-hover);
+        background-color: var(--bg-4);
+        border: 1px solid var(--border-color-hover);
+    }
+
+    .settings-section-close-btn:active {
+        color: black;
+        background-color: white;
+    }
+
+    .settings-navigation-section {
+        width: 20%;
+        background-color: var(--bg-primary);
+    }
+
+    .settings-display-section {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .settings-controls-section {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 15px;
+        gap: 3px;
+        color: var(--icon-color);
+        font-size: 16px;
+    }
+
+    .settings-child-section {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 1800px) {
+    .settings-section-container {
+        height: 75%;
+        width: 70%;
+        background-color: var(--bg-primary-hover);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .settings-section-close-btn {
+        position: fixed;
+        color: var(--icon-color);
+        top: 16.5%;
+        left: 86%;
+        background-color: var(--bg-secondary);
+        padding: 6px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 13px;
+        border: 1px solid var(--border-color)
+    }
+
+    .settings-section-close-btn:hover {
+        color: var(--icon-color-hover);
+        background-color: var(--bg-4);
+        border: 1px solid var(--border-color-hover)
+    }
+
+    .settings-section-close-btn:active {
+        color: black;
+        background-color: white;
+    }
+
+    .settings-navigation-section {
+        width: 20%;
+        background-color: var(--bg-primary);
+    }
+
+    .settings-display-section {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .settings-controls-section {
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 15px;
+        gap: 3px;
+        color: var(--icon-color);
+        font-size: 17px;
+    }
+
+    .settings-child-section {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
